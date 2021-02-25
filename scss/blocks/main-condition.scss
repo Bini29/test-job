@@ -1,0 +1,104 @@
+.main-condition {
+padding-top: 130px;
+}
+.main-condition h2{
+    font-family: $font-Whitney;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 52px;
+    color: #2E2D35;
+    text-align: left;
+    margin: 0;
+}
+.main-condition-list {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin-top: 52px;
+margin-bottom: 97px;
+
+
+}
+.condition-item {
+    position: relative;
+    width: 280px;
+    background: #F6F5F9;
+    border-radius: 6px;
+    padding: 42px 250px 32px 40px;
+    margin-bottom: 30px;
+    &:nth-child(3){
+        width: 290px;
+        padding: 42px 240px 32px 40px;
+    }
+
+}
+.condition-item img {
+    position: absolute;
+    top: 21px;
+    right: 9px;
+}
+.condition-item__title{
+    font-family: $font-Segoe;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 29px;
+    color: #2E2D35;
+    margin: 0;
+}
+.condition-item__desk {
+    font-family: 'Segoe UI Regular';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 142%;
+    color: #474351;
+    margin-top: 23px;
+}
+@media (max-width: $tablet-width) { 
+    .main-condition {
+        padding-top: 45px;
+    }
+    .main-condition h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .condition-item {
+        width: 320px;
+        padding: 10px;
+        z-index: 10;
+        &:nth-child(3){
+            width: 320px;
+            padding: 10px;
+        }
+    }
+    .condition-item img {
+        width: 115px;
+        z-index: -1;
+        opacity: 0.5;
+    }
+    .main-condition-list{
+        margin-bottom: 25px;
+    }
+}
+@media(min-width: $tablet-width) and (max-width: $desktop-width) { 
+    .main-condition {
+        padding-top: 40px;
+    }
+    .condition-item {
+        width: 45%;
+        padding: 10px;
+        z-index: 1;
+        &:nth-child(3){
+            width: 45%;
+            padding: 10px;
+        }
+    }
+    .condition-item img {
+        width: 120px;
+        z-index: -1;
+        opacity: 0.5;
+    }
+    .main-condition-list {
+        margin-bottom: 0px;
+    }
+}

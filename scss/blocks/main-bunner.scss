@@ -1,0 +1,74 @@
+.main-bunner {
+    
+    background-color: $Bg-main;
+    
+    padding-top: 130px;
+    padding-bottom: 180px;
+
+}
+.main-bunner__title {
+    width: 515px;
+    font-family: $font-Whitney;
+    color:$white;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 120%;
+    margin: 0;
+}
+.main-bunner__desk {
+    width: 515px;
+    font-family: $font-Whitney;
+    color:$white;
+    font-weight: 350;
+    font-size: 24px;
+    line-height: 120%;
+    margin: 0;
+    margin-top: 33px;
+    margin-bottom: 62px;
+}
+.main-bunner__regbut {
+}
+.main-bunner__image {
+    position: absolute;
+    right: -9px;
+    top: -43px;
+}
+@media (max-width: $tablet-width) {
+    .main-bunner__title {
+        width: auto;
+        font-size: 40px;
+        text-align: center;
+    }
+    .main-bunner {
+        padding-top: 35px;
+        z-index: 1;
+        padding-bottom: 55px;
+    }
+    .main-bunner__image {
+        position: absolute;
+        right: -9px;
+        top: 145px;
+        width: 100%;
+        height: auto;
+        z-index: -1;
+        opacity: 0.5;
+    }
+    .main-bunner__desk {
+        width: auto;
+        text-align: center;
+    }
+    .main-bunner__regbut {
+        margin: 0 auto;
+        display: block;
+    }
+}
+@media(min-width: $tablet-width) and (max-width: $desktop-width) {
+    .main-bunner__image {
+        z-index: -1;
+        opacity: 0.5;
+        right: 0;
+    }
+    .contFlex {
+        justify-content: space-around;
+    }
+}

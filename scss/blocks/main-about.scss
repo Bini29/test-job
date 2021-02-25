@@ -1,0 +1,50 @@
+.main-about {
+    border-radius: 10px;
+    padding-top: 73px;
+    padding-bottom: 70px;
+    background-image: url(/image/about-bg.png),linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.main-about h2{
+    width: 557px;
+    font-family: $font-Whitney;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 45px;
+    color: white;
+    padding-left: 70px;
+    margin: 0;
+    margin-bottom: 45px;
+}
+.main-about__regbut {
+    margin-left: 70px;
+}
+@media (max-width: $tablet-width) {  
+    .main-about h2 {
+        width: auto;
+        font-size: 24px;
+        line-height: 25px;
+        padding-left: 0;
+        text-align: center;
+    }
+    .main-about{
+        padding-top: 15px;
+    }
+    .main-about__regbut {
+        margin: 0 auto;
+        display: block;
+    }
+    .main-about{
+        background-size: contain;
+        background-position: right bottom;
+    }
+}
+@media(min-width: $tablet-width) and (max-width: $desktop-width) { 
+    .main-about{
+        background-size: auto;
+        background-position: right bottom;
+    }
+ }
