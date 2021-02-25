@@ -295,7 +295,8 @@ body {
   background-image: url(../image/about-bg.png), linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
   background-position: right;
   background-repeat: no-repeat;
-  background-size: auto; }
+  background-size: auto;
+  margin-bottom: 185px; }
 
 .main-about h2 {
   width: 557px;
